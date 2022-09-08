@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Product Cart</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220908222431" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<header id="header" data-scroll="200" data-scroll-show="500" class="header">
+			<div class="header__container">
+				<div class="header__body">
+					<div class="header__column header__column_logo">
+						<a href="" class="header__logo"><img src="img/logo.svg" alt="logo" /><span>greenshop</span></a>
+					</div>
+					<div class="header__column header__column_wide">
+						<div class="header__menu menu">
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item"><a href="" class="menu__link">Home</a></li>
+									<li class="menu__item"><a href="" class="menu__link">Shop</a></li>
+									<li class="menu__item"><a href="" class="menu__link">Plant Care</a></li>
+									<li class="menu__item"><a href="" class="menu__link">Blog</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="header__column header__column_actions actions-header">
+						<div class="actions-header__search">
+							<div class="search-form">
+								<button type="button" class="search-form__icon _icon-search"></button>
+								<form action="#" class="search-form__item">
+									<input autocomplete="off" type="text" name="form[]" placeholder="" class="search-form__input" />
+									<button type="button" class="search-form__btn _icon-search"></button>
+								</form>
+							</div>
+						</div>
+
+						<div class="actions-header__item cart-header">
+							<a data-cart href="product-cart.html" class="cart-header__icon _icon-cart"><span></span></a>
+						</div>
+						<button data-popup="#popup-login" type="button" class="actions-header__button button">Login</button>
+						<button type="button" class="icon-menu"><span></span></button>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<div class="breadcrumbs__product-cart breadcrumbs">
+				<div class="breadcrumbs__container">
+					<nav class="breadcrumbs__nav">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item">
+								<a href="" class="breadcrumbs__link">Home</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<a href="" class="breadcrumbs__link">Shop</a>
+							</li>
+							<!-- !===!!! -->
+							<li class="breadcrumbs__item">
+								<span class="breadcrumbs__current">Shopping Cart</span>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div id="table-product-cart" class="product-cart__products products-section">
+				<div class="products-section__container">
+					<div class="products-section__left">
+						<!-- table ------------------------ -->
+						<div class="products-section__table table">
+							<table class="table__item">
+								<tr class="table__row table__row_head">
+									<th class="table__title">Products</th>
+									<th class="table__title">Price</th>
+									<th class="table__title">Quantity</th>
+									<th class="table__title">Total</th>
+								</tr>
+								<tbody class="table__body">
+									<!-- -- 1   -->
+									<tr data-card-pid="1" class="table__row">
+										<td class="table__cell table__cell_big">
+											<div class="line-table__image-box">
+												<div class="line-table__image -ibg"><picture><source srcset="img/product-cart/product-cart-table/01.webp" type="image/webp"><img src="img/product-cart/product-cart-table/01.png" alt="plant" /></picture></div>
+											</div>
+											<div class="line-table__info">
+												<div class="line-table__name">Barberton Daisy</div>
+												<div class="line-table__size">Size: M</div>
+											</div>
+										</td>
+										<td class="table__cell table__cell_price">$119.50</td>
+										<td class="table__cell table__cell_quantity">
+											<div class="quantity-wrapper">
+												<div class="quantity">
+													<button data-action="minus" type="button" class="quantity__button quantity__button_minus"></button>
+													<div class="quantity__input">
+														<input data-counter autocomplete="off" type="text" name="form[]" value="1" />
+													</div>
+
+													<button data-action="plus" type="button" class="quantity__button quantity__button_plus"></button>
+												</div>
+											</div>
+										</td>
+										<td class="table__cell table__cell_total">$119.50<button type="button" class="button-delete"></button></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<!-- ------------------ -->
+					<div class="products-section__right">
+						<div class="products-section__form cart-total-form">
+							<div class="cart-total-form__title">Cart Totals</div>
+							<form action="" class="cart-total-form__form module-form">
+								<div class="cart-total-form__label module-form__label">Coupon Apply</div>
+								<div class="module-form__line">
+									<input autocomplete="off" type="text" name="form[]" data-required="text" data-error="Error" placeholder="Enter coupon code here..." class="cart-total-form__input module-form__input" />
+									<button type="submit" class="cart-total-form__button button module-form__button">Apply</button>
+								</div>
+							</form>
+						</div>
+						<div class="products-section__total-info info-total-body">
+							<div class="info-total-body__items">
+								<div class="info-total-body__item">Subtotal<span>$2,683.00</span></div>
+								<div class="info-total-body__item info-total-body__item_coupon">Coupon Discount<span>(-) 00.00</span></div>
+								<div class="info-total-body__item">Shiping<span>$16.00</span></div>
+								<a href="#/" class="info-total-body__item info-total-body__item_small">View shipping charge</a>
+							</div>
+							<div class="info-total-body__total">Total<span>$2,699.00</span></div>
+							<button type="submit" class="info-total-body__button button">Proceed To Checkout</button>
+							<a href="#/" class="info-total-body__text">Continue Shopping</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="product-cart__interested interested">
+				<div class="interested__container">
+					<h6 class="interested__title">You may be interested in</h6>
+					<div class="interested__slider swiper">
+						<div class="interested__wrapper swiper-wrapper">
+							<div class="interested__slide slide-inerested swiper-slide">
+								<div class="slide-inerested__item item-inerested">
+									<div class="item-inerested__image -ibg"><picture><source srcset="img/product-cart/slider/01.webp" type="image/webp"><img src="img/product-cart/slider/01.jpg" alt="plant" /></picture></div>
+									<div class="item-inerested__body">
+										<div class="item-inerested__name">Beach Spider Lily</div>
+										<div class="item-inerested__price">$129.00</div>
+									</div>
+								</div>
+							</div>
+							<div class="interested__slide slide-inerested swiper-slide">
+								<div class="slide-inerested__item item-inerested">
+									<div class="item-inerested__image -ibg"><picture><source srcset="img/product-cart/slider/02.webp" type="image/webp"><img src="img/product-cart/slider/02.jpg" alt="plant" /></picture></div>
+									<div class="item-inerested__body">
+										<div class="item-inerested__name">Beach Spider Lily</div>
+										<div class="item-inerested__price">$129.00</div>
+									</div>
+								</div>
+							</div>
+							<div class="interested__slide slide-inerested swiper-slide">
+								<div class="slide-inerested__item item-inerested">
+									<div class="item-inerested__image -ibg"><picture><source srcset="img/product-cart/slider/03.webp" type="image/webp"><img src="img/product-cart/slider/03.jpg" alt="plant" /></picture></div>
+									<div class="item-inerested__body">
+										<div class="item-inerested__name">Beach Spider Lily</div>
+										<div class="item-inerested__price">$129.00</div>
+									</div>
+								</div>
+							</div>
+							<div class="interested__slide slide-inerested swiper-slide">
+								<div class="slide-inerested__item item-inerested">
+									<div class="item-inerested__image -ibg"><picture><source srcset="img/product-cart/slider/04.webp" type="image/webp"><img src="img/product-cart/slider/04.jpg" alt="plant" /></picture></div>
+									<div class="item-inerested__body">
+										<div class="item-inerested__name">Beach Spider Lily</div>
+										<div class="item-inerested__price">$129.00</div>
+									</div>
+								</div>
+							</div>
+							<div class="interested__slide slide-inerested swiper-slide">
+								<div class="slide-inerested__item item-inerested">
+									<div class="item-inerested__image -ibg"><picture><source srcset="img/product-cart/slider/05.webp" type="image/webp"><img src="img/product-cart/slider/05.jpg" alt="plant" /></picture></div>
+									<div class="item-inerested__body">
+										<div class="item-inerested__name">Beach Spider Lily</div>
+										<div class="item-inerested__price">$129.00</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="interested__swiper-pagination swiper-pagination"></div>
+				</div>
+			</section>
+			<section class="home-page__subscribe-section section-subscribe">
+				<div class="section-subscribe__container">
+					<div class="section-subscribe__container_small">
+						<div class="section-subscribe__items">
+							<div class="section-subscribe__item item-subscribe">
+								<div class="item-subscribe__icon"><img src="img/home-page/subscribe/01.svg" alt="image" /></div>
+								<h5 class="item-subscribe__title">Garden Care</h5>
+								<div class="item-subscribe__text">We are an online plant shop offering a wide range of cheap and trendy plants.</div>
+							</div>
+							<div class="section-subscribe__item item-subscribe">
+								<div class="item-subscribe__icon"><img src="img/home-page/subscribe/02.svg" alt="image" /></div>
+								<div class="item-subscribe__title">Plant Renovation</div>
+								<div class="item-subscribe__text">We are an online plant shop offering a wide range of cheap and trendy plants.</div>
+							</div>
+							<div class="section-subscribe__item item-subscribe">
+								<div class="item-subscribe__icon"><img src="img/home-page/subscribe/03.svg" alt="image" /></div>
+								<div class="item-subscribe__title">Watering Graden</div>
+								<div class="item-subscribe__text">We are an online plant shop offering a wide range of cheap and trendy plants.</div>
+							</div>
+							<div class="section-subscribe__item section-subscribe__subscribe-module module-subscribe">
+								<h3 class="module-subscribe__title">Would you like to join newsletters?</h3>
+								<form action="" class="module-subscribe__form">
+									<input autocomplete="off" type="text" name="form[]" data-required="email" data-error="Error" placeholder="enter your email address..." class="module-subscribe__input" />
+									<button type="submit" class="module-subscribe__button button">Join</button>
+								</form>
+								<div class="module-subscribe__text">We usually post offers and challenges in newsletter. We’re your online houseplant destination. We offer a wide range of houseplants and accessories shipped directly from our (green)house to yours!</div>
+							</div>
+						</div>
+						<!-- <div class="section-subscribe__subscribe-module module-subscribe">
+        <h3 class="module-subscribe__title">Would you like to join newsletters?</h3>
+        <form action="" class="module-subscribe__form">
+          <input autocomplete="off" type="text" name="form[]" data-required="email" data-error="Error" placeholder="enter your email address..." class="module-subscribe__input" />
+          <button type="submit" class="module-subscribe__button button">Join</button>
+        </form>
+        <div class="module-subscribe__text">We usually post offers and challenges in newsletter. We’re your online houseplant destination. We offer a wide range of houseplants and accessories shipped directly from our (green)house to yours!</div>
+      </div> -->
+					</div>
+				</div>
+			</section>
+
+			<!-- ------------ -->
+
+			<div class="home-page__contacts contacts-homepage">
+				<div class="contacts-homepage__container">
+					<div class="contacts-homepage__container_small">
+						<div class="contacts-homepage__items">
+							<div class="contacts-homepage__logo"><img src="img/logo-text.svg" alt="logo" /></div>
+							<div class="contacts-homepage__item item-contact item-contact_1">
+								<div class="item-contact__text_adress">70 West Buckingham Ave. Farmingdale, NY 11735</div>
+							</div>
+							<div class="contacts-homepage__item item-contact item-contact_2">
+								<a href="#/" class="item-contact__text">contact@greenshop.com</a>
+							</div>
+							<div class="contacts-homepage__item item-contact item-contact_3">
+								<a href="#/" class="item-contact__text">+88 01911 717 490</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__wrapper">
+					<div class="footer__main">
+						<div class="footer__nav nav-footer">
+							<div data-spollers="599.98" class="nav-footer__spollers spollers">
+								<!-- -------- -->
+								<div class="footer-spoiler-item spollers__item">
+									<button type="button" data-spoller class="footer-spoller-item__title spollers__title footer-title">My Account</button>
+									<div class="footer-spoller-item__body spollers__body">
+										<nav class="menu-footer">
+											<ul class="menu-footer__list">
+												<li class="menu-footer__item">
+													<a href="" class="menu-footer__link">My Account</a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="" class="menu-footer__link">Our stores</a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="" class="menu-footer__link">Contact us</a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="" class="menu-footer__link">Career</a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="" class="menu-footer__link">Specials</a>
+												</li>
+											</ul>
+										</nav>
+									</div>
+								</div>
+								<!-- --------- -->
+								<div class="footer-spoiler-item spollers__item">
+									<button type="button" data-spoller class="footer-spoller-item__title spollers__title footer-title">Help & Guide</button>
+									<div class="footer-spoller-item__body spollers__body">
+										<nav class="menu-footer">
+											<ul class="menu-footer__list">
+												<li class="menu-footer__item">
+													<a href="" class="menu-footer__link">Help Center</a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="" class="menu-footer__link">How to Buy</a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="" class="menu-footer__link">Shipping & Delivery</a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="" class="menu-footer__link">Product Policy</a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="" class="menu-footer__link">How to Return</a>
+												</li>
+											</ul>
+										</nav>
+									</div>
+								</div>
+
+								<!-- --------- -->
+								<div class="footer-spoiler-item spollers__item">
+									<button type="button" data-spoller class="footer-spoller-item__title spollers__title footer-title">Categories</button>
+									<div class="footer-spoller-item__body spollers__body">
+										<nav class="menu-footer">
+											<ul class="menu-footer__list">
+												<li class="menu-footer__item">
+													<a href="" class="menu-footer__link">House Plants</a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="" class="menu-footer__link">Potter Plants</a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="" class="menu-footer__link">Seeds</a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="" class="menu-footer__link">Small Plants</a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="" class="menu-footer__link">Accessories</a>
+												</li>
+											</ul>
+										</nav>
+									</div>
+								</div>
+								<!-- --------- -->
+							</div>
+							<div class="nav-footer__info">
+								<div class="footer-social">
+									<h4 class="footer-social__title footer-title">Social Media</h4>
+									<div class="footer-social__block block-social">
+										<div class="block-social__links">
+											<a href="#/" class="block-social__link _icon-facebook"></a>
+											<a href="#/" class="block-social__link _icon-instagram"></a>
+											<a href="#/" class="block-social__link _icon-twitter"></a>
+											<a href="#/" class="block-social__link _icon-linkedin"></a>
+											<a href="#/" class="block-social__link _icon-union"></a>
+										</div>
+									</div>
+								</div>
+								<div class="footer-accept">
+									<h4 class="footer-accept__title footer-title">We accept</h4>
+									<div class="footer-accept__links">
+										<a href="#/" class="footer-accept__link"><picture><source srcset="img/footer/paypal.webp" type="image/webp"><img src="img/footer/paypal.png" alt="Paypal" /></picture></a>
+										<a href="#/" class="footer-accept__link"><picture><source srcset="img/footer/mastercard.webp" type="image/webp"><img src="img/footer/mastercard.png" alt="Mastercard" /></picture></a>
+										<a href="#/" class="footer-accept__link"><picture><source srcset="img/footer/visa-.webp" type="image/webp"><img src="img/footer/visa-.png" alt="Visa" /></picture></a>
+										<a href="#/" class="footer-accept__link"><picture><source srcset="img/footer/american-.webp" type="image/webp"><img src="img/footer/american-.png" alt="American-Express" /></picture></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- *-- -->
+					<div class="footer__bottom">
+						<p class="footer__copyright">© 2021 GreenShop. All Rights Reserved.</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<!--
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+			</div>
+		</div>
+	</div>
+</div>
+ -->
+	<script src="js/app.min.js?_v=20220908222431"></script>
+</body>
+
+</html>

@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Product Checkout</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220908222431" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<header id="header" data-scroll="200" data-scroll-show="500" class="header">
+			<div class="header__container">
+				<div class="header__body">
+					<div class="header__column header__column_logo">
+						<a href="" class="header__logo"><img src="img/logo.svg" alt="logo" /><span>greenshop</span></a>
+					</div>
+					<div class="header__column header__column_wide">
+						<div class="header__menu menu">
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item"><a href="" class="menu__link">Home</a></li>
+									<li class="menu__item"><a href="" class="menu__link">Shop</a></li>
+									<li class="menu__item"><a href="" class="menu__link">Plant Care</a></li>
+									<li class="menu__item"><a href="" class="menu__link">Blog</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="header__column header__column_actions actions-header">
+						<div class="actions-header__search">
+							<div class="search-form">
+								<button type="button" class="search-form__icon _icon-search"></button>
+								<form action="#" class="search-form__item">
+									<input autocomplete="off" type="text" name="form[]" placeholder="" class="search-form__input" />
+									<button type="button" class="search-form__btn _icon-search"></button>
+								</form>
+							</div>
+						</div>
+
+						<div class="actions-header__item cart-header">
+							<a data-cart href="product-cart.html" class="cart-header__icon _icon-cart"><span></span></a>
+						</div>
+						<button data-popup="#popup-login" type="button" class="actions-header__button button">Login</button>
+						<button type="button" class="icon-menu"><span></span></button>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<section class="page__checkout checkout">
+				<div class="checkout__container">
+					<h3 class="checkout__line"><span class="checkout__label checkout__label_bold">Home</span>/<span class="checkout__label checkout__label_ml">Shop</span>/<span class="checkout__label checkout__label_ml">Checkout</span></h3>
+					<div class="checkout__wrapper">
+						<div class="checkout__item">
+							<h2 class="checkout__subtitle">Billing Address</h2>
+							<form action="#" class="checkout__form form">
+								<div class="form__line">
+									<div class="form__inner">
+										<label for="firstname" class="form__label">First Name <span class="form__symbol">*</span></label>
+										<input id="firstname" placeholder="" autocomplete="off" type="text" name="firstname" class="form__input">
+									</div>
+									<div class="form__inner">
+										<label for="lastname" class="form__label">Last Name<span class="form__symbol">*</span></label>
+										<input id="lastname" placeholder="" autocomplete="off" type="text" name="lastname" class="form__input">
+									</div>
+								</div>
+								<div class="form__line">
+									<div class="form__inner">
+										<label for="country-region" class="form__label">Country / Region<span class="form__symbol">*</span></label>
+										<select name="form[country-region]" class="form__select">
+											<option value="" class="form__selected">Select a country / region</option>
+											<option value="1">Ukcraine / Ukrainian</option>
+											<option value="2">United Kingdom / English</option>
+											<option value="3">United State / English</option>
+											<option value="4">Australia / English</option>
+											<option value="5">Canada / English</option>
+											<option value="6">Japan / Japanese</option>
+										</select>
+									</div>
+									<div class="form__inner">
+										<label for="town-city" class="form__label">Town / City<span class="form__symbol">*</span></label>
+										<input id="town-city" placeholder="" autocomplete="off" type="text" name="town-city" class="form__input">
+									</div>
+								</div>
+								<div class="form__line">
+									<div class="form__inner">
+										<label for="street-address" class="form__label">Street Address<span class="form__symbol">*</span></label>
+										<input id="street-address" placeholder="House number and street name" autocomplete="off" type="text" name="street-address" class="form__input">
+									</div>
+									<div class="form__inner form__inner_mt">
+										<input id="appartament" placeholder="Appartment, suite, unit, etc. (optional)" autocomplete="off" type="text" name="appartament" class="form__input">
+									</div>
+								</div>
+								<div class="form__line">
+									<div class="form__inner">
+										<label for="state" class="form__label">State<span class="form__symbol">*</span></label>
+										<select name="form[state]" class="form__select">
+											<option class="form__selected" value="">Select a state</option>
+											<option value="1">Ukcraine</option>
+											<option value="2">United Kingdom</option>
+											<option value="3">United State</option>
+											<option value="4">Australia</option>
+											<option value="5">Canada</option>
+											<option value="6">Japan</option>
+										</select>
+									</div>
+									<div class="form__inner">
+										<label for="zip" class="form__label">Zip<span class="form__symbol">*</span></label>
+										<input id="zip" placeholder="" autocomplete="off" type="text" name="zip" class="form__input">
+									</div>
+								</div>
+								<div class="form__line form__line_acc">
+									<div class="form__inner">
+										<label for="zip" class="form__label">Email address<span class="form__symbol">*</span></label>
+										<input autocomplete="off" required placeholder="" name="email" value="" type="email" class="form__input" />
+									</div>
+									<div class="form__inner">
+										<label for="phone" class="form__label">Phone Number<span class="form__symbol">*</span></label>
+										<div class="form__wrapper">
+											<select name="form[]" class="select">
+												<option value="1" selected>+380</option>
+												<option value="2">+61</option>
+												<option value="3">+124*</option>
+												<option value="4">+1</option>
+												<option value="5">+57</option>
+												<option value="6">+45</option>
+												<option value="7">+420</option>
+												<option value="8">+353</option>
+												<option value="9">+972</option>
+												<option value="10">+81</option>
+											</select>
+											<input autocomplete="off" required placeholder="" name="email" value="" type="text" class="form__input form__input_acc" />
+										</div>
+									</div>
+								</div>
+								<div class="form__line form__line_check form__line_flx">
+									<div class="checkbox">
+										<input id="c_1" data-error="Error" class="checkbox__input" type="checkbox" value="1" name="form[]">
+										<label for="c_1" class="checkbox__label"><span class="checkbox__text">Ship to a different address?</span></label>
+									</div>
+								</div>
+								<div class="form__line form__line_area">
+									<label for="textarea" class="form__label">Order notes (optional)</label>
+									<textarea id="textarea" tabindex="" name="text" class="form__textarea"></textarea>
+								</div>
+							</form>
+						</div>
+						<div class="checkout__item checkout__item_second">
+							<h2 class="checkout__subtitle">Your Order</h2>
+							<div class="checkout__products products">
+								<div class="products__label"><span>Products</span><span>Subtotal</span></div>
+								<div class="products__items">
+									<div class="products__item">
+										<div class="products__img"><picture><source srcset="img/product-checkout/01.webp" type="image/webp"><img src="img/product-checkout/01.png" alt="plant"></picture></div>
+										<div class="products__inner">
+											<div class="products__descr">
+												<div class="products__top">Barberton Daisy</div>
+												<div class="products__foot"><span>SKU:</span>1995751877966</div>
+											</div>
+											<div class="products__box">
+												<div class="products__count">(x2)</div>
+												<div class="products__total">$238.00</div>
+											</div>
+										</div>
+									</div>
+									<div class="products__item">
+										<div class="products__img"><picture><source srcset="img/product-checkout/02.webp" type="image/webp"><img src="img/product-checkout/02.png" alt="plant"></picture></div>
+										<div class="products__inner">
+											<div class="products__descr">
+												<div class="products__top">Blushing Bromeliad</div>
+												<div class="products__foot"><span>SKU:</span>19957518757065</div>
+											</div>
+											<div class="products__box">
+												<div class="products__count">(x6)</div>
+												<div class="products__total">$834.00</div>
+											</div>
+										</div>
+									</div>
+									<div class="products__item">
+										<div class="products__img"><picture><source srcset="img/product-checkout/03.webp" type="image/webp"><img src="img/product-checkout/03.png" alt="plant"></picture></div>
+										<div class="products__inner">
+											<div class="products__descr">
+												<div class="products__top">Aluminum Plant</div>
+												<div class="products__foot"><span>SKU:</span>1995751877786</div>
+											</div>
+											<div class="products__box">
+												<div class="products__count">(x9)</div>
+												<div class="products__total">$1,611.00</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="products__subtotal subtotal">
+									<div class="subtotal__descr">
+										Have a coupon code?
+										<button data-popup="#popup-coupon" type="submit" class="subtotal__link">Click here</button>
+									</div>
+									<div class="subtotal__items">
+										<div class="subtotal__item">
+											<p class="subtotal__text">Subtotal</p>
+											<div class="subtotal__sum">$2,683.00</div>
+										</div>
+										<div class="subtotal__item">
+											<p class="subtotal__text">Coupon Discount</p>
+											<div class="subtotal__sum subtotal__sum_small">(-) 00.00</div>
+										</div>
+										<div class="subtotal__item">
+											<p class="subtotal__text">Shiping</p>
+											<div class="subtotal__sum">$16.00</div>
+										</div>
+										<div class="subtotal__item subtotal__item_foot-link">
+											<a href="#" class="subtotal__link subtotal__link_foot">View shipping charge</a>
+										</div>
+										<div class="subtotal__item subtotal__item_foot">
+											<p class="subtotal__text subtotal__text_foot">Total</p>
+											<div class="subtotal__sum subtotal__sum_foot">$2,699.00</div>
+										</div>
+									</div>
+									<div class="pay pay__block">
+										<div class="pay__subtitle">Payment Method</div>
+										<div class="pay__delivery options">
+											<div class="options__item">
+												<input id="o_1" class="options__input" checked type="radio" value="1" name="pay">
+												<label for="o_1" class="options__label options__label_links">
+													<div class="options__links">
+														<div class="options__link"><picture><source srcset="img/product-checkout/paypal.webp" type="image/webp"><img src="img/product-checkout/paypal.png" alt="paypal"></picture></div>
+														<div class="options__link"><picture><source srcset="img/product-checkout/mastercard.webp" type="image/webp"><img src="img/product-checkout/mastercard.png" alt="mastercard"></picture></div>
+														<div class="options__link"><picture><source srcset="img/product-checkout/visa-.webp" type="image/webp"><img src="img/product-checkout/visa-.png" alt="visa"></picture></div>
+														<div class="options__link"><picture><source srcset="img/product-checkout/american-.webp" type="image/webp"><img src="img/product-checkout/american-.png" alt="american-express"></picture></div>
+													</div>
+												</label>
+											</div>
+											<div class="options__item">
+												<input id="o_2" class="options__input" type="radio" value="2" name="pay">
+												<label for="o_2" class="options__label"><span class="options__text">Dorect bank transfer</span></label>
+											</div>
+											<div class="options__item">
+												<input id="o_3" class="options__input" type="radio" value="2" name="pay">
+												<label for="o_3" class="options__label"><span class="options__text">Cash on delivery</span></label>
+											</div>
+										</div>
+										<button type="submit" class="pay__btn button">Place Order</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="home-page__subscribe-section section-subscribe">
+				<div class="section-subscribe__container">
+					<div class="section-subscribe__container_small">
+						<div class="section-subscribe__items">
+							<div class="section-subscribe__item item-subscribe">
+								<div class="item-subscribe__icon"><img src="img/home-page/subscribe/01.svg" alt="image" /></div>
+								<h5 class="item-subscribe__title">Garden Care</h5>
+								<div class="item-subscribe__text">We are an online plant shop offering a wide range of cheap and trendy plants.</div>
+							</div>
+							<div class="section-subscribe__item item-subscribe">
+								<div class="item-subscribe__icon"><img src="img/home-page/subscribe/02.svg" alt="image" /></div>
+								<div class="item-subscribe__title">Plant Renovation</div>
+								<div class="item-subscribe__text">We are an online plant shop offering a wide range of cheap and trendy plants.</div>
+							</div>
+							<div class="section-subscribe__item item-subscribe">
+								<div class="item-subscribe__icon"><img src="img/home-page/subscribe/03.svg" alt="image" /></div>
+								<div class="item-subscribe__title">Watering Graden</div>
+								<div class="item-subscribe__text">We are an online plant shop offering a wide range of cheap and trendy plants.</div>
+							</div>
+							<div class="section-subscribe__item section-subscribe__subscribe-module module-subscribe">
+								<h3 class="module-subscribe__title">Would you like to join newsletters?</h3>
+								<form action="" class="module-subscribe__form">
+									<input autocomplete="off" type="text" name="form[]" data-required="email" data-error="Error" placeholder="enter your email address..." class="module-subscribe__input" />
+									<button type="submit" class="module-subscribe__button button">Join</button>
+								</form>
+								<div class="module-subscribe__text">We usually post offers and challenges in newsletter. We’re your online houseplant destination. We offer a wide range of houseplants and accessories shipped directly from our (green)house to yours!</div>
+							</div>
+						</div>
+						<!-- <div class="section-subscribe__subscribe-module module-subscribe">
+        <h3 class="module-subscribe__title">Would you like to join newsletters?</h3>
+        <form action="" class="module-subscribe__form">
+          <input autocomplete="off" type="text" name="form[]" data-required="email" data-error="Error" placeholder="enter your email address..." class="module-subscribe__input" />
+          <button type="submit" class="module-subscribe__button button">Join</button>
+        </form>
+        <div class="module-subscribe__text">We usually post offers and challenges in newsletter. We’re your online houseplant destination. We offer a wide range of houseplants and accessories shipped directly from our (green)house to yours!</div>
+      </div> -->
+					</div>
+				</div>
+			</section>
+
+			<!-- ------------ -->
+
+			<div class="home-page__contacts contacts-homepage">
+				<div class="contacts-homepage__container">
+					<div class="contacts-homepage__container_small">
+						<div class="contacts-homepage__items">
+							<div class="contacts-homepage__logo"><img src="img/logo-text.svg" alt="logo" /></div>
+							<div class="contacts-homepage__item item-contact item-contact_1">
+								<div class="item-contact__text_adress">70 West Buckingham Ave. Farmingdale, NY 11735</div>
+							</div>
+							<div class="contacts-homepage__item item-contact item-contact_2">
+								<a href="#/" class="item-contact__text">contact@greenshop.com</a>
+							</div>
+							<div class="contacts-homepage__item item-contact item-contact_3">
+								<a href="#/" class="item-contact__text">+88 01911 717 490</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__wrapper">
+					<div class="footer__main">
+						<div class="footer__nav nav-footer">
+							<div data-spollers="599.98" class="nav-footer__spollers spollers">
+								<!-- -------- -->
+								<div class="footer-spoiler-item spollers__item">
+									<button type="button" data-spoller class="footer-spoller-item__title spollers__title footer-title">My Account</button>
+									<div class="footer-spoller-item__body spollers__body">
+										<nav class="menu-footer">
+											<ul class="menu-footer__list">
+												<li class="menu-footer__item">
+													<a href="" class="menu-footer__link">My Account</a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="" class="menu-footer__link">Our stores</a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="" class="menu-footer__link">Contact us</a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="" class="menu-footer__link">Career</a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="" class="menu-footer__link">Specials</a>
+												</li>
+											</ul>
+										</nav>
+									</div>
+								</div>
+								<!-- --------- -->
+								<div class="footer-spoiler-item spollers__item">
+									<button type="button" data-spoller class="footer-spoller-item__title spollers__title footer-title">Help & Guide</button>
+									<div class="footer-spoller-item__body spollers__body">
+										<nav class="menu-footer">
+											<ul class="menu-footer__list">
+												<li class="menu-footer__item">
+													<a href="" class="menu-footer__link">Help Center</a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="" class="menu-footer__link">How to Buy</a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="" class="menu-footer__link">Shipping & Delivery</a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="" class="menu-footer__link">Product Policy</a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="" class="menu-footer__link">How to Return</a>
+												</li>
+											</ul>
+										</nav>
+									</div>
+								</div>
+
+								<!-- --------- -->
+								<div class="footer-spoiler-item spollers__item">
+									<button type="button" data-spoller class="footer-spoller-item__title spollers__title footer-title">Categories</button>
+									<div class="footer-spoller-item__body spollers__body">
+										<nav class="menu-footer">
+											<ul class="menu-footer__list">
+												<li class="menu-footer__item">
+													<a href="" class="menu-footer__link">House Plants</a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="" class="menu-footer__link">Potter Plants</a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="" class="menu-footer__link">Seeds</a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="" class="menu-footer__link">Small Plants</a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="" class="menu-footer__link">Accessories</a>
+												</li>
+											</ul>
+										</nav>
+									</div>
+								</div>
+								<!-- --------- -->
+							</div>
+							<div class="nav-footer__info">
+								<div class="footer-social">
+									<h4 class="footer-social__title footer-title">Social Media</h4>
+									<div class="footer-social__block block-social">
+										<div class="block-social__links">
+											<a href="#/" class="block-social__link _icon-facebook"></a>
+											<a href="#/" class="block-social__link _icon-instagram"></a>
+											<a href="#/" class="block-social__link _icon-twitter"></a>
+											<a href="#/" class="block-social__link _icon-linkedin"></a>
+											<a href="#/" class="block-social__link _icon-union"></a>
+										</div>
+									</div>
+								</div>
+								<div class="footer-accept">
+									<h4 class="footer-accept__title footer-title">We accept</h4>
+									<div class="footer-accept__links">
+										<a href="#/" class="footer-accept__link"><picture><source srcset="img/footer/paypal.webp" type="image/webp"><img src="img/footer/paypal.png" alt="Paypal" /></picture></a>
+										<a href="#/" class="footer-accept__link"><picture><source srcset="img/footer/mastercard.webp" type="image/webp"><img src="img/footer/mastercard.png" alt="Mastercard" /></picture></a>
+										<a href="#/" class="footer-accept__link"><picture><source srcset="img/footer/visa-.webp" type="image/webp"><img src="img/footer/visa-.png" alt="Visa" /></picture></a>
+										<a href="#/" class="footer-accept__link"><picture><source srcset="img/footer/american-.webp" type="image/webp"><img src="img/footer/american-.png" alt="American-Express" /></picture></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- *-- -->
+					<div class="footer__bottom">
+						<p class="footer__copyright">© 2021 GreenShop. All Rights Reserved.</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<div id="popup-coupon" aria-hidden="true" class="popup popup-login">
+		<div class="popup__wrapper popup-login__wrapper">
+			<div class="popup__content popup-login__content">
+				<button data-close type="button" class="popup__close popup-login__close _icon-close"></button>
+
+				<div data-tabs class="popup-login__tabs tabs">
+					<div data-tabs-body class="popup-login-tabs__conten tabs__content">
+						<div class="popup-login-tabs__body tabs__body">
+							<p class="popup-login__subtitle">Have a coupon code?</p>
+							<form data-dev action="" action="#" class="popup-login__form">
+								<div class="popup-login__line">
+									<input autocomplete="off" type="password" name="form[]" data-required="text" data-error="Error" placeholder="Apply code" class="popup-login__input popup-login__input_pass" />
+								</div>
+								<button id="popup-coupon-agree" type="submit" class="popup-login__button button">Apply</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="popup-coupon-agree" aria-hidden="true" class="popup popup-login">
+		<div class="popup__wrapper popup-login__wrapper">
+			<div class="popup__content popup-login__content">
+				<button data-close type="button" class="popup__close popup-login__close _icon-close"></button>
+				<div data-tabs class="popup-login__tabs tabs">
+					<div data-tabs-body class="popup-login-tabs__conten tabs__content">
+						<div class="popup-login-tabs__body tabs__body">
+							<p class="popup-login__subtitle">Thanks</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="popup-login" aria-hidden="true" class="popup popup-login">
+		<div class="popup__wrapper popup-login__wrapper">
+			<div class="popup__content popup-login__content">
+				<button data-close type="button" class="popup__close popup-login__close _icon-close"></button>
+
+				<div data-tabs class="popup-login__tabs tabs">
+					<nav data-tabs-titles class="popup-login__titles tabs__navigation">
+						<button type="button" class="popup-login-tabs__title tabs__title _tab-active">Login</button>
+						<button type="button" class="popup-login-tabs__title popup-login-tabs__title_reg tabs__title">Register</button>
+					</nav>
+					<div data-tabs-body class="popup-login-tabs__conten tabs__content">
+						<div class="popup-login-tabs__body tabs__body">
+							<p class="popup-login__descr">Enter your username and password to login.</p>
+							<form data-dev action="" action="#" class="popup-login__form">
+								<div class="popup-login__line">
+									<input autocomplete="off" type="text" name="form[]" data-required="email" data-error="Error" placeholder="Enter your email" class="popup-login__input" />
+								</div>
+								<div class="popup-login__line">
+									<input autocomplete="off" type="password" name="form[]" data-required="text" data-error="Error" placeholder="Password" class="popup-login__input popup-login__input_pass" />
+									<span>Forgot Password?</span>
+								</div>
+								<button type="submit" class="popup-login__button button">Login</button>
+							</form>
+							<div class="popup-login__else">
+								<span>Or login with</span>
+								<a href="" class="google-login"><img src="img/popup/google-color.svg" alt="" />
+									<p>Login with Google</p>
+								</a>
+								<a href="" class="facebook-login"><img src="img/popup/facebook.svg" alt="" />
+									<p>Login with Facebook</p>
+								</a>
+							</div>
+						</div>
+						<div class="popup-login-tabs__body tabs__body">
+							<p class="popup-login__descr">Enter your username and password to register.</p>
+							<form data-dev action="" action="#" class="popup-login__form">
+								<div class="popup-login__line">
+									<input autocomplete="off" type="text" name="form[]" required data-error="Error" placeholder="User name" class="popup-login__input" />
+								</div>
+								<div class="popup-login__line">
+									<input autocomplete="off" type="text" name="form[]" data-required="email" data-error="Error" placeholder="Enter your email" class="popup-login__input" />
+								</div>
+								<div class="popup-login__line">
+									<input autocomplete="off" type="password" name="form[]" data-required="text" data-error="Error" placeholder="Password" class="popup-login__input popup-login__input_pass" />
+								</div>
+								<div class="popup-login__line">
+									<input autocomplete="off" type="password" name="form[]" data-required="text" data-error="Error" placeholder="Confirm Password" class="popup-login__input popup-login__input_pass" />
+								</div>
+								<button type="submit" class="popup-login__button button">Register</button>
+							</form>
+							<div class="popup-login__else">
+								<span>Or login with</span>
+								<a href="" class="google-login"><img src="img/popup/google-color.svg" alt="" />
+									<p>Login with Google</p>
+								</a>
+								<a href="" class="facebook-login"><img src="img/popup/facebook.svg" alt="" />
+									<p>Login with Facebook</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">Закрыть</button>
+				<div class="popup__text"></div>
+			</div>
+		</div>
+	</div>
+	<div id="popup-filter" aria-hidden="true" class="popup">
+		<div class="popup__wrapper popup-filter__wrapper">
+			<div class="popup__content popup-filter__content">
+				<button data-close type="button" class="popup-filter__close _icon-close"></button>
+				<div class="popup__text popup-filter__text">
+					<div class="popup-filter__inner-content">
+						<!--  categories   -->
+						<div class="popup-filter__categories categories-menu">
+							<h4 class="categories-menu__title title-h4">Categories</h4>
+							<nav class="categories-menu__body">
+								<ul class="categories-menu__list">
+									<li class="categories-menu__item _active">
+										<a href="" class="categories-menu__link">House Plants</a>
+										<div class="categories-menu__quantity">(<span>33</span>)</div>
+									</li>
+
+									<li class="categories-menu__item">
+										<a href="" class="categories-menu__link">Potter Plants</a>
+										<div class="categories-menu__quantity">(<span>12</span>)</div>
+									</li>
+									<li class="categories-menu__item">
+										<a href="" class="categories-menu__link">Seeds</a>
+										<div class="categories-menu__quantity">(<span>65</span>)</div>
+									</li>
+									<li class="categories-menu__item">
+										<a href="" class="categories-menu__link">Small Plants</a>
+										<div class="categories-menu__quantity">(<span>39</span>)</div>
+									</li>
+									<li class="categories-menu__item">
+										<a href="" class="categories-menu__link">Big Plants</a>
+										<div class="categories-menu__quantity">(<span>23</span>)</div>
+									</li>
+									<li class="categories-menu__item">
+										<a href="" class="categories-menu__link">Succulents</a>
+										<div class="categories-menu__quantity">(<span>17</span>)</div>
+									</li>
+									<li class="categories-menu__item">
+										<a href="" class="categories-menu__link">Trerrariums</a>
+										<div class="categories-menu__quantity">(<span>19</span>)</div>
+									</li>
+									<li class="categories-menu__item">
+										<a href="" class="categories-menu__link">Gardening</a>
+										<div class="categories-menu__quantity">(<span>13</span>)</div>
+									</li>
+									<li class="categories-menu__item">
+										<a href="" class="categories-menu__link">Accessories</a>
+										<div class="categories-menu__quantity">(<span>18</span>)</div>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<!--*  range =============== * -->
+						<div class="popup-filter__filter price-filter">
+							<div class="price-filter__title">Price Range</div>
+
+							<div data-range id="range" class="price-filter__body">
+								<div data-range-item class="price-filter__range"></div>
+								<div class="price-filter__inputs">
+									<div class="price-filter__line">
+										<span class="price-filter__text">from:</span>
+										<span class="price-filter__text">$</span>
+										<input id="input-0" data-range-from="0" autocomplete="off" type="number" value="30" name="form[]" class="price-filter__input" />
+									</div>
+									<div class="price-filter__line">
+										<span class="price-filter__text">to:</span>
+										<span class="price-filter__text">$</span>
+										<input id="input-1" data-range-to="2000" autocomplete="off" type="number" value="1500" name="form[]" class="price-filter__input" />
+									</div>
+								</div>
+								<div class="price-filter__filred-price filred-price">
+									<p>Price:</p>
+									<div class="filred-price__info">
+										<div id="text-small-price" class="filred-price__small"></div>
+										<div id="text-big-price" class="filred-price__big"></div>
+									</div>
+								</div>
+								<a href="#/" class="price-filter__button button">Filter</a>
+							</div>
+						</div>
+						<!--* =============== * -->
+						<!--  size -->
+						<div class="popup-filter__size size-plants">
+							<h4 class="size-plants__title title-h4">Size</h4>
+							<nav class="size-plants-menu__body">
+								<ul class="size-plants-menu__list">
+									<li class="size-plants-menu__item">
+										<a href="" class="size-plants-menu__link">Small</a>
+										<div class="size-plants-menu__plant-size">(<span>119</span>)</div>
+									</li>
+									<li class="size-plants-menu__item">
+										<a href="" class="size-plants-menu__link">Medium</a>
+										<div class="size-plants-menu__plant-size">(<span>86</span>)</div>
+									</li>
+									<li class="size-plants-menu__item">
+										<a href="" class="size-plants-menu__link">Large</a>
+										<div class="size-plants-menu__plant-size">(<span>78</span>)</div>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<!-- super-sale-banner -->
+						<a href="#/" class="popup-filter__super-sale super-sale">
+							<div class="super-sale__box-images">
+								<div class="super-sale__image super-sale__image_plant -ibg_contain"><picture><source srcset="img/home-page/main-section/super-sale-image.webp" type="image/webp"><img src="img/home-page/main-section/super-sale-image.png" alt="Sale-plant" /></picture></div>
+								<div class="super-sale__image super-sale__image_banner -ibg"><picture><source srcset="img/home-page/main-section/super-sale-banner.webp" type="image/webp"><img src="img/home-page/main-section/super-sale-banner.jpg" alt="Sale-plant" /></picture></div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20220908222431"></script>
+</body>
+
+</html>

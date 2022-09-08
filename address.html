@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>My Address</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220908222431" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<header id="header" data-scroll="200" data-scroll-show="500" class="header">
+			<div class="header__container">
+				<div class="header__body">
+					<div class="header__column header__column_logo">
+						<a href="" class="header__logo"><img src="img/logo.svg" alt="logo" /><span>greenshop</span></a>
+					</div>
+					<div class="header__column header__column_wide">
+						<div class="header__menu menu">
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item"><a href="" class="menu__link">Home</a></li>
+									<li class="menu__item"><a href="" class="menu__link">Shop</a></li>
+									<li class="menu__item"><a href="" class="menu__link">Plant Care</a></li>
+									<li class="menu__item"><a href="" class="menu__link">Blog</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="header__column header__column_actions actions-header">
+						<div class="actions-header__search">
+							<div class="search-form">
+								<button type="button" class="search-form__icon _icon-search"></button>
+								<form action="#" class="search-form__item">
+									<input autocomplete="off" type="text" name="form[]" placeholder="" class="search-form__input" />
+									<button type="button" class="search-form__btn _icon-search"></button>
+								</form>
+							</div>
+						</div>
+
+						<div class="actions-header__item cart-header">
+							<a data-cart href="product-cart.html" class="cart-header__icon _icon-cart"><span></span></a>
+						</div>
+						<button data-popup="#popup-login" type="button" class="actions-header__button button">Login</button>
+						<button type="button" class="icon-menu"><span></span></button>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<section class="page__account-details account-details">
+				<div class="account-details__container">
+					<div class="account-details__wrapper">
+						<aside class="account-details__item left-aside">
+							<div class="left-aside__wrapper">
+								<h2 class="left-aside__subtitle">My Account</h2>
+								<ul class="left-aside__list">
+									<li class="left-aside__item">
+										<a href="account-details.html" class="left-aside__text _icon-account"><span>Account Details</span></a>
+									</li>
+									<li class="left-aside__item">
+										<a href="address.html" class="left-aside__text left-aside__text_fill">
+											<svg width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M7.20882 6.0835C6.40466 6.0835 5.75049 6.73766 5.75049 7.54266C5.75049 8.34683 6.40466 9.00016 7.20882 9.00016C8.01299 9.00016 8.66716 8.34683 8.66716 7.54266C8.66716 6.73766 8.01299 6.0835 7.20882 6.0835M7.20882 10.2502C5.71549 10.2502 4.50049 9.036 4.50049 7.54266C4.50049 6.0485 5.71549 4.8335 7.20882 4.8335C8.70216 4.8335 9.91716 6.0485 9.91716 7.54266C9.91716 9.036 8.70216 10.2502 7.20882 10.2502" fill="" />
+												<mask id="mask0_45182_228" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="15" height="17">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M0.333496 0.666748H14.0831V16.9167H0.333496V0.666748Z" fill="white" />
+												</mask>
+												<g mask="url(#mask0_45182_228)">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M7.20801 1.91675C4.10634 1.91675 1.58301 4.46425 1.58301 7.59425C1.58301 11.5767 6.26967 15.4567 7.20801 15.6634C8.14634 15.4559 12.833 11.5759 12.833 7.59425C12.833 4.46425 10.3097 1.91675 7.20801 1.91675V1.91675ZM7.20801 16.9167C5.71301 16.9167 0.333008 12.2901 0.333008 7.59425C0.333008 3.77425 3.41717 0.666748 7.20801 0.666748C10.9988 0.666748 14.083 3.77425 14.083 7.59425C14.083 12.2901 8.70301 16.9167 7.20801 16.9167V16.9167Z" fill="" />
+												</g>
+											</svg>
+											<span>Address</span></a>
+									</li>
+									<li class="left-aside__item">
+										<a href="#" class="left-aside__text _icon-cart"><span>Orders</span></a>
+									</li>
+									<li class="left-aside__item">
+										<a href="#" class="left-aside__text _icon-favorite"><span>Wishlist</span></a>
+									</li>
+									<li class="left-aside__item">
+										<a href="#" class="left-aside__text left-aside__text_stroke">
+											<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M4.1875 10.1404L6.43225 7.22368L8.99275 9.23368L11.1895 6.39868" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M13.7501 0.762451C14.5466 0.762451 15.1916 1.40745 15.1916 2.20395C15.1916 2.9997 14.5466 3.64545 13.7501 3.64545C12.9536 3.64545 12.3086 2.9997 12.3086 2.20395C12.3086 1.40745 12.9536 0.762451 13.7501 0.762451Z" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+												<path d="M14.5664 5.95179C14.6662 6.62304 14.7119 7.37904 14.7119 8.22729C14.7119 13.4308 12.9779 15.1648 7.77441 15.1648C2.57166 15.1648 0.836914 13.4308 0.836914 8.22729C0.836914 3.02454 2.57166 1.28979 7.77441 1.28979C8.60691 1.28979 9.35016 1.33404 10.0117 1.43004" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+											<span>Reports</span></a>
+									</li>
+									<li class="left-aside__item">
+										<a href="#" class="left-aside__text left-aside__text_stroke"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M7.90918 10.0933V1.0625" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+												<path d="M10.0962 7.89819L7.90917 10.0942L5.72217 7.89819" stroke="#727272" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+												<path d="M11.2775 4.44409C13.9617 4.69159 14.9375 5.69659 14.9375 9.69409C14.9375 15.0191 13.2043 15.0191 8 15.0191C2.79425 15.0191 1.0625 15.0191 1.0625 9.69409C1.0625 5.69659 2.0375 4.69159 4.7225 4.44409" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+											<span>Downloads</span></a>
+									</li>
+									<li class="left-aside__item">
+										<a href="#" class="left-aside__text left-aside__text_stroke">
+											<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M8 14.75C3.12918 14.75 1.2175 14.404 0.907644 12.6525C0.597792 10.901 2.58037 7.60806 3.19131 6.52135C5.23443 2.88806 6.62279 1.25 8 1.25C9.37721 1.25 10.7656 2.88806 12.8087 6.52135C13.4196 7.60806 15.4022 10.901 15.0924 12.6525C14.7833 14.404 12.8708 14.75 8 14.75Z" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+												<path d="M8 5.375V8.29625" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+												<path d="M7.99662 10.9211H8.00337" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+
+											<span>Support</span></a>
+									</li>
+								</ul>
+								<button type="submit" class="left-aside__btn">
+									<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M17.1592 9.1005H7.125" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M14.7202 6.67041L17.1602 9.10041L14.7202 11.5304" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M12.6333 5.35817C12.3583 2.37484 11.2416 1.2915 6.79997 1.2915C0.882467 1.2915 0.882467 3.2165 0.882467 8.99984C0.882467 14.7832 0.882467 16.7082 6.79997 16.7082C11.2416 16.7082 12.3583 15.6248 12.6333 12.6415" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+
+									<span>LogOut</span>
+								</button>
+							</div>
+						</aside>
+
+						<div class="account-details__item form-item">
+							<form action="#" class="form-item__form form">
+								<h2 class="form__subtitle">
+									<div class="form__heading">Billing Address <a href="#" class="form__add">Add</a></div>
+									<div class="form__text">The following addresses will be used on the checkout page by default.</div>
+								</h2>
+								<div class="form__line form__line_acc">
+									<div class="form__inner">
+										<label for="firstname" class="form__label">First Name <span class="form__symbol">*</span></label>
+										<input id="firstname" placeholder="" autocomplete="off" type="text" name="firstname" class="form__input" />
+									</div>
+									<div class="form__inner">
+										<label for="lastname" class="form__label">Last Name<span class="form__symbol">*</span></label>
+										<input id="lastname" placeholder="" autocomplete="off" type="text" name="lastname" class="form__input" />
+									</div>
+								</div>
+								<div class="form__line form__line_acc">
+									<div class="form__inner">
+										<label for="country-region" class="form__label">Country / Region<span class="form__symbol">*</span></label>
+										<select name="form[]" class="select">
+											<option value="" class="">Select a country / region</option>
+											<option value="1">Ukcraine / Ukrainian</option>
+											<option value="2">United Kingdom / English</option>
+											<option value="3">United State / English</option>
+											<option value="4">Australia / English</option>
+											<option value="5">Canada / English</option>
+											<option value="6">Japan / Japanese</option>
+										</select>
+									</div>
+									<div class="form__inner">
+										<label for="town-city" class="form__label">Town / City<span class="form__symbol">*</span></label>
+										<input id="town-city" placeholder="" autocomplete="off" type="text" name="town-city" class="form__input" />
+									</div>
+								</div>
+								<div class="form__line form__line_acc">
+									<div class="form__inner">
+										<label for="street-address" class="form__label">Street Address<span class="form__symbol">*</span></label>
+										<input id="street-address" placeholder="House number and street name" autocomplete="off" type="text" name="street-address" class="form__input" />
+									</div>
+									<div class="form__inner form__inner_mt">
+										<input id="appartament" placeholder="Appartment, suite, unit, etc. (optional)" autocomplete="off" type="text" name="appartament" class="form__input" />
+									</div>
+								</div>
+								<div class="form__line form__line_acc">
+									<div class="form__inner">
+										<label for="state" class="form__label">State<span class="form__symbol">*</span></label>
+										<select name="form[]" class="select">
+											<option value="">Select a state</option>
+											<option value="1">Ukcraine</option>
+											<option value="2">United Kingdom</option>
+											<option value="3">United State</option>
+											<option value="4">Australia</option>
+											<option value="5">Canada</option>
+											<option value="6">Japan</option>
+										</select>
+									</div>
+									<div class="form__inner">
+										<label for="zip" class="form__label">Zip<span class="form__symbol">*</span></label>
+										<input id="zip" placeholder="" autocomplete="off" type="text" name="zip" class="form__input" />
+									</div>
+								</div>
+								<div class="form__line form__line_acc">
+									<div class="form__inner">
+										<label for="zip" class="form__label">Email address<span class="form__symbol">*</span></label>
+										<input autocomplete="off" required placeholder="" name="email" value="" type="email" class="form__input" />
+									</div>
+									<div class="form__inner">
+										<label for="phone" class="form__label">Phone Number<span class="form__symbol">*</span></label>
+										<div class="form__wrapper">
+											<select name="form[]" class="select">
+												<option value="1" selected>+380</option>
+												<option value="2">+61</option>
+												<option value="3">+124*</option>
+												<option value="4">+1</option>
+												<option value="5">+57</option>
+												<option value="6">+45</option>
+												<option value="7">+420</option>
+												<option value="8">+353</option>
+												<option value="9">+972</option>
+												<option value="10">+81</option>
+											</select>
+											<input id="phone" autocomplete="off" required placeholder="" name="email" value="" type="text" class="form__input form__input_acc" />
+										</div>
+									</div>
+								</div>
+								<button type="submit" class="form__btn form__btn_adr button">Save Address</button>
+								<div class="form__line form__line_check form__line_flx">
+									<div class="form__checkbox-item">
+										<div class="form__shipping">
+											<span class="form__subtitle form__subtitle_add">Shipping Address</span>
+											<span class="form__text">You have not set up this type of address yet.</span>
+										</div>
+										<div class="form__box">
+											<div class="checkbox checkbox_add">
+												<input id="c_1" data-error="Error" class="checkbox__input" type="checkbox" value="1" name="form[]">
+												<label for="c_1" class="checkbox__label checkbox__label_add"><span class="checkbox__text">Same as billing address</span></label>
+											</div>
+											<a href="#" class="checkbox__add">Add</a>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+	</div>
+	<div id="popup-login" aria-hidden="true" class="popup popup-login">
+		<div class="popup__wrapper popup-login__wrapper">
+			<div class="popup__content popup-login__content">
+				<button data-close type="button" class="popup__close popup-login__close _icon-close"></button>
+
+				<div data-tabs class="popup-login__tabs tabs">
+					<nav data-tabs-titles class="popup-login__titles tabs__navigation">
+						<button type="button" class="popup-login-tabs__title tabs__title _tab-active">Login</button>
+						<button type="button" class="popup-login-tabs__title popup-login-tabs__title_reg tabs__title">Register</button>
+					</nav>
+					<div data-tabs-body class="popup-login-tabs__conten tabs__content">
+						<div class="popup-login-tabs__body tabs__body">
+							<p class="popup-login__descr">Enter your username and password to login.</p>
+							<form data-dev action="" action="#" class="popup-login__form">
+								<div class="popup-login__line">
+									<input autocomplete="off" type="text" name="form[]" data-required="email" data-error="Error" placeholder="Enter your email" class="popup-login__input" />
+								</div>
+								<div class="popup-login__line">
+									<input autocomplete="off" type="password" name="form[]" data-required="text" data-error="Error" placeholder="Password" class="popup-login__input popup-login__input_pass" />
+									<span>Forgot Password?</span>
+								</div>
+								<button type="submit" class="popup-login__button button">Login</button>
+							</form>
+							<div class="popup-login__else">
+								<span>Or login with</span>
+								<a href="" class="google-login"><img src="img/popup/google-color.svg" alt="" />
+									<p>Login with Google</p>
+								</a>
+								<a href="" class="facebook-login"><img src="img/popup/facebook.svg" alt="" />
+									<p>Login with Facebook</p>
+								</a>
+							</div>
+						</div>
+						<div class="popup-login-tabs__body tabs__body">
+							<p class="popup-login__descr">Enter your username and password to register.</p>
+							<form data-dev action="" action="#" class="popup-login__form">
+								<div class="popup-login__line">
+									<input autocomplete="off" type="text" name="form[]" required data-error="Error" placeholder="User name" class="popup-login__input" />
+								</div>
+								<div class="popup-login__line">
+									<input autocomplete="off" type="text" name="form[]" data-required="email" data-error="Error" placeholder="Enter your email" class="popup-login__input" />
+								</div>
+								<div class="popup-login__line">
+									<input autocomplete="off" type="password" name="form[]" data-required="text" data-error="Error" placeholder="Password" class="popup-login__input popup-login__input_pass" />
+								</div>
+								<div class="popup-login__line">
+									<input autocomplete="off" type="password" name="form[]" data-required="text" data-error="Error" placeholder="Confirm Password" class="popup-login__input popup-login__input_pass" />
+								</div>
+								<button type="submit" class="popup-login__button button">Register</button>
+							</form>
+							<div class="popup-login__else">
+								<span>Or login with</span>
+								<a href="" class="google-login"><img src="img/popup/google-color.svg" alt="" />
+									<p>Login with Google</p>
+								</a>
+								<a href="" class="facebook-login"><img src="img/popup/facebook.svg" alt="" />
+									<p>Login with Facebook</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">Закрыть</button>
+				<div class="popup__text"></div>
+			</div>
+		</div>
+	</div>
+	<div id="popup-filter" aria-hidden="true" class="popup">
+		<div class="popup__wrapper popup-filter__wrapper">
+			<div class="popup__content popup-filter__content">
+				<button data-close type="button" class="popup-filter__close _icon-close"></button>
+				<div class="popup__text popup-filter__text">
+					<div class="popup-filter__inner-content">
+						<!--  categories   -->
+						<div class="popup-filter__categories categories-menu">
+							<h4 class="categories-menu__title title-h4">Categories</h4>
+							<nav class="categories-menu__body">
+								<ul class="categories-menu__list">
+									<li class="categories-menu__item _active">
+										<a href="" class="categories-menu__link">House Plants</a>
+										<div class="categories-menu__quantity">(<span>33</span>)</div>
+									</li>
+
+									<li class="categories-menu__item">
+										<a href="" class="categories-menu__link">Potter Plants</a>
+										<div class="categories-menu__quantity">(<span>12</span>)</div>
+									</li>
+									<li class="categories-menu__item">
+										<a href="" class="categories-menu__link">Seeds</a>
+										<div class="categories-menu__quantity">(<span>65</span>)</div>
+									</li>
+									<li class="categories-menu__item">
+										<a href="" class="categories-menu__link">Small Plants</a>
+										<div class="categories-menu__quantity">(<span>39</span>)</div>
+									</li>
+									<li class="categories-menu__item">
+										<a href="" class="categories-menu__link">Big Plants</a>
+										<div class="categories-menu__quantity">(<span>23</span>)</div>
+									</li>
+									<li class="categories-menu__item">
+										<a href="" class="categories-menu__link">Succulents</a>
+										<div class="categories-menu__quantity">(<span>17</span>)</div>
+									</li>
+									<li class="categories-menu__item">
+										<a href="" class="categories-menu__link">Trerrariums</a>
+										<div class="categories-menu__quantity">(<span>19</span>)</div>
+									</li>
+									<li class="categories-menu__item">
+										<a href="" class="categories-menu__link">Gardening</a>
+										<div class="categories-menu__quantity">(<span>13</span>)</div>
+									</li>
+									<li class="categories-menu__item">
+										<a href="" class="categories-menu__link">Accessories</a>
+										<div class="categories-menu__quantity">(<span>18</span>)</div>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<!--*  range =============== * -->
+						<div class="popup-filter__filter price-filter">
+							<div class="price-filter__title">Price Range</div>
+
+							<div data-range id="range" class="price-filter__body">
+								<div data-range-item class="price-filter__range"></div>
+								<div class="price-filter__inputs">
+									<div class="price-filter__line">
+										<span class="price-filter__text">from:</span>
+										<span class="price-filter__text">$</span>
+										<input id="input-0" data-range-from="0" autocomplete="off" type="number" value="30" name="form[]" class="price-filter__input" />
+									</div>
+									<div class="price-filter__line">
+										<span class="price-filter__text">to:</span>
+										<span class="price-filter__text">$</span>
+										<input id="input-1" data-range-to="2000" autocomplete="off" type="number" value="1500" name="form[]" class="price-filter__input" />
+									</div>
+								</div>
+								<div class="price-filter__filred-price filred-price">
+									<p>Price:</p>
+									<div class="filred-price__info">
+										<div id="text-small-price" class="filred-price__small"></div>
+										<div id="text-big-price" class="filred-price__big"></div>
+									</div>
+								</div>
+								<a href="#/" class="price-filter__button button">Filter</a>
+							</div>
+						</div>
+						<!--* =============== * -->
+						<!--  size -->
+						<div class="popup-filter__size size-plants">
+							<h4 class="size-plants__title title-h4">Size</h4>
+							<nav class="size-plants-menu__body">
+								<ul class="size-plants-menu__list">
+									<li class="size-plants-menu__item">
+										<a href="" class="size-plants-menu__link">Small</a>
+										<div class="size-plants-menu__plant-size">(<span>119</span>)</div>
+									</li>
+									<li class="size-plants-menu__item">
+										<a href="" class="size-plants-menu__link">Medium</a>
+										<div class="size-plants-menu__plant-size">(<span>86</span>)</div>
+									</li>
+									<li class="size-plants-menu__item">
+										<a href="" class="size-plants-menu__link">Large</a>
+										<div class="size-plants-menu__plant-size">(<span>78</span>)</div>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<!-- super-sale-banner -->
+						<a href="#/" class="popup-filter__super-sale super-sale">
+							<div class="super-sale__box-images">
+								<div class="super-sale__image super-sale__image_plant -ibg_contain"><picture><source srcset="img/home-page/main-section/super-sale-image.webp" type="image/webp"><img src="img/home-page/main-section/super-sale-image.png" alt="Sale-plant" /></picture></div>
+								<div class="super-sale__image super-sale__image_banner -ibg"><picture><source srcset="img/home-page/main-section/super-sale-banner.webp" type="image/webp"><img src="img/home-page/main-section/super-sale-banner.jpg" alt="Sale-plant" /></picture></div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20220908222431"></script>
+</body>
+
+</html>
